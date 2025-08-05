@@ -26,5 +26,9 @@ public class Tester {
         pizza = new PepperDecorator(pizza);//sending cheese pizza as parameter
         getDetails(pizza);
 
+        // Normal Pizza + pepper
+        pizza = new PepperDecorator(new PlainPizza());//sending cheese pizza as parameter
+        getDetails(pizza);
+
     }
 }
